@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#m, .m{
+			width: 100px;
+			height: 100px;
+		}
+		#m{
+			background-color: blue;		
+		}
+		.m{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="m"></div>
+	<div class="m"></div>
+	<div class="m"></div>
+	<script src="drag.js"></script>
+	<script type="text/javascript">
+		var div = document.getElementById('m');
+		drag(div);
+		var divs = document.getElementsByClassName('m');
+		dragClass(divs);
+	</script>
+</body>
+</html>
